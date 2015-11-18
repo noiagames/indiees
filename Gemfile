@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+
 gem 'rails', '4.2.5'
 
 
@@ -35,5 +35,10 @@ end
 
 group :production do
 	gem 'pg'
-	gem 'rails_12factor'
+	
 end	
+
+gem 'rails_12factor', group: :production  
+gem 'unicorn'
+
+ruby '2.2.1'
